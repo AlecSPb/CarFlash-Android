@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginRight="-2dp"
+    android:layout_marginLeft="-2dp"
+    android:id="@+id/root">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <com.carflash.user.samir.customviews.TypeFaceRobotoRegular
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/HOLDER_RIDE_HISTORY_RENTAL_DESIGN__start_ing_point_of_the_trip_where_the_trip_started"
+                    android:gravity="center"
+                    android:textColor="@color/icons_8_muted_greydark"
+                    android:textSize="11dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:id="@+id/start_txt"
+                    android:visibility="visible"
+                    android:maxLines="2"></com.carflash.user.samir.customviews.TypeFaceRobotoRegular>
+
+                <com.carflash.user.samir.customviews.TypeFaceRobotoRegular
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/HOLDER_RIDE_HISTORY_RENTAL_DESIGN__destination_point_of_the_ride_where_the_trip_ends_with_the_full_address"
+                    android:gravity="center"
+                    android:textColor="@color/icons_8_muted_greydark"
+                    android:textSize="11dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:id="@+id/end_txt"
+                    android:visibility="gone"
+                    android:maxLines="2"></com.carflash.user.samir.customviews.TypeFaceRobotoRegular>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/icons_8_muted_grey"
+                    android:layout_weight="1"></LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/image"
+                        android:src="@drawable/ddddddd"
+                        android:scaleType="centerCrop"/>
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom"
+            android:gravity="center|top"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="20dp">
+
+                <com.carflash.user.samir.customviews.TypeFaceRobotoRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/pure_black"
+                    android:textSize="11dp"
+                    android:id="@+id/time_txt"/>
+
+
+
+                <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textSize="10dp"
+                    android:id="@+id/car_name_txt"/>
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/car_image"
+                        android:padding="4dp"
+                        android:src="@drawable/car"/>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="20dp">
+
+                <com.carflash.user.samir.customviews.TypeFaceRobotoRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp"
+                    android:textColor="@color/pure_black"
+                    android:id="@+id/amount_txt"/>
+
+
+
+                <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/ride_status_txt"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</android.support.v7.widget.CardView>

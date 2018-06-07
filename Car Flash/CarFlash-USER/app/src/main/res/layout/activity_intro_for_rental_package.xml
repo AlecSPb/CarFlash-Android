@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rentalmodule.taxirentalmodule.IntroForRentalPackage">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/progress_layout">
+
+        <ProgressBar
+            android:gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/initial_progress"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/intro_rental_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/car" />
+
+        <com.carflash.user.rentalmodule.customview.TypefaceMonixBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/INTRO_FOR_RENTAL_PACKAGE__vehicleCharter"
+            android:textColor="@color/muted_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/muted_black" />
+
+        <TextView
+            android:id="@+id/vehicle_charter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/muted_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+<!--
+            <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/book_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.carflash.user.samir.customviews.TypeFaceTextMonixBold
+                        android:id="@+id/booking_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/INTRO_FOR_RENTAL_PACKAGE__book_your_charter"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/pure_white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="CustomRatingBar">
+        <attr name="maxStars" format="integer" />
+        <attr name="stars" format="float" />
+        <attr name="starOff" format="reference|integer" />
+        <attr name="starOn" format="reference|integer" />
+        <attr name="starHalf" format="reference|integer" />
+        <attr name="starPadding" format="dimension" />
+        <attr name="onlyForDisplay" format="boolean" />
+        <attr name="halfStars" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DiscreteSlider">
+        <attr name="tickMarkCount" format="integer" />
+        <attr name="tickMarkRadius" format="dimension" />
+        <attr name="position" format="integer" />
+        <attr name="horizontalBarThickness" format="dimension" />
+        <attr name="backdropFillColor" format="color" />
+        <attr name="backdropStrokeColor" format="color" />
+        <attr name="backdropStrokeWidth" format="dimension" />
+        <attr name="thumb" format="reference" />
+        <attr name="progressDrawable" format="reference" />
+    </declare-styleable>
+
+
+
+     <style name="SelectableItem">
+            <item name="android:background">@android:drawable/list_selector_background</item>
+        </style>
+
+
+
+
+
+
+
+    ///// RENTAl
+
+    <!-- Theme for SwitchDateTime -->
+    <style name="Theme.SwitchDateTime" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <!-- Header Background -->
+    <style name="Theme.SwitchDateTime.HeaderBackground">
+        <item name="android:background">#95a5a6</item>
+    </style>
+
+    <!-- Content Background -->
+    <style name="Theme.SwitchDateTime.ContentBackground">
+        <item name="android:background">#00ffffff</item>
+    </style>
+
+    <!-- Title -->
+    <style name="Theme.SwitchDateTime.TitleDateTimeLabelText">
+        <item name="android:textSize">@dimen/title_date_time_label_text</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Icon -->
+    <style name="Theme.SwitchDateTime.IconDateTimeSwitch">
+        <item name="android:src">@drawable/ic_view_carousel_black_32dp</item>
+        <item name="android:tint">#fff</item>
+    </style>
+
+    <!-- Time  -->
+    <style name="Theme.SwitchDateTime.Time">
+        <item name="timeCircleColor">#e1e1e1</item>
+        <item name="timeCenterColor">#95a5a6</item>
+        <item name="timeAmPmBackgroundColor">#95a5a6</item>
+        <item name="timeAmPmSelectBackgroundColor">#333333</item> <!-- Alpha is apply-->
+        <item name="timeAmPmTextColor">#c2c2c2</item>
+        <item name="timeSelectorColor">#333333</item>
+        <item name="timeCircularNumbersColor">#494949</item>
+        <item name="android:textSize">10dp</item>
+
+    </style>
+
+    <!-- Time Label -->
+    <style name="Theme.SwitchDateTime.TimeLabelText">
+        <item name="android:textSize">@dimen/time_label_text</item>
+        <item name="android:textColor">#e1e1e1</item>
+    </style>
+
+    <style name="Theme.SwitchDateTime.TimeLabelAmPm">
+        <item name="android:textSize">@dimen/time_label_AmPm</item>
+        <item name="android:textColor">#e1e1e1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Date -->
+    <style name="Theme.SwitchDateTime.Date">
+        <item name="mcv_selectionColor">#333333</item>
+    </style>
+
+    <!-- Date Label -->
+    <style name="Theme.SwitchDateTime.DateLabelMonthAndDay">
+        <item name="android:textSize">@dimen/date_label_month_and_day</item>
+        <item name="android:textColor">#e1e1e1</item>
+    </style>
+
+    <!-- Year Selected-->
+    <style name="Theme.SwitchDateTime.Year">
+        <item name="colorCircleIndicator">#687576</item>
+        <item name="android:textColor">#e6e6e6</item>
+    </style>
+
+    <!-- Year Label -->
+    <style name="Theme.SwitchDateTime.DateLabelYear">
+        <item name="android:textSize">@dimen/date_label_year</item>
+        <item name="android:textColor">#e1e1e1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

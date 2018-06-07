@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Card_First">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/webview"></WebView>
+
+    <ProgressBar
+        android:id="@+id/pb_addcart"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/color_action_bar_background"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_back_card"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:src="@drawable/back_arrow"-->
+                <!--android:tint="@color/color_action_bar_text_icon"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+
+            <!--<com.carflash.user.samir.customviews.TypeFaceTextMonixRegular-->
+                <!--android:id="@+id/typefaceTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/ADD_CARD_ACTIVITY_add_credit_card"-->
+                <!--android:textColor="@color/color_action_bar_text_icon"-->
+                <!--android:textSize="15dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/color_action_bar_text_icon" />-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/credit_or_debit"-->
+        <!--android:visibility="visible"-->
+        <!--android:background="@color/pure_white">-->
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/icon_width"-->
+            <!--android:layout_height="@dimen/icon_height"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:tint="@color/color_menu_icon"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:src="@drawable/ic_payment"/>-->
+        <!--<com.carflash.user.samir.customviews.TypeFaceTextMonixRegular-->
+            <!--android:id="@+id/typeFaceTextMonixRegular2"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:gravity="center|left"-->
+            <!--android:text="@string/TRIAL_ACTIVITY__credit_or_debit"-->
+            <!--android:textColor="@color/color_menu_text"-->
+            <!--android:textSize="16dp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:background="@drawable/layout_light"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<com.carflash.user.samir.customviews.TypeFaceTextMonixRegular-->
+            <!--android:id="@+id/save_cards"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="16dp" />-->
+
+
+        <!--<com.sam.placer.PlaceHolderView-->
+            <!--android:id="@+id/placeHolder_one"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:scrollbars="none"></com.sam.placer.PlaceHolderView>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

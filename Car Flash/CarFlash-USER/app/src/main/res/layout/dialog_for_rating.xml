@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".7"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layout_light"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.carflash.user.typeface.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/INVOICE_ACTIVITY__rating"
+            android:textColor="@color/colorText"
+            android:textSize="16dp"
+            geekui:customTypeface="OpenSans_Regular.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorView" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Comments"
+            android:paddingLeft="10dp"
+            android:id="@+id/comments"
+            android:gravity="center|left"/>
+
+        <LinearLayout
+            android:id="@+id/lldone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_dark"
+            android:gravity="center">
+
+            <com.carflash.user.typeface.TypefaceTextView
+                android:id="@+id/showitemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/INVOICE_ACTIVITY__done"
+                android:textColor="@color/colorTextFooter"
+                android:textSize="16dp"
+                geekui:customTypeface="OpenSans_Regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

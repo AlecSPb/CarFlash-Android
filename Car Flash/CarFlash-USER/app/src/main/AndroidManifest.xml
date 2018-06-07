@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.carflash.user">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.cabjee.user.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <permission
+        android:name="com.carflash.user.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.carflash.user.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".others.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo_100"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <!-- paystack publishable key -->
+        <meta-data
+            android:name="co.paystack.android.PublishableKey"
+            android:value="pk_live_ebd6a0ff8db7ccc21af12078a16f94e85894b364" />
+
+        <!--
+        <meta-data
+            android:name="co.paystack.android.PublishableKey"
+            android:value="pk_test_6ae5285c709466189260f2ceafc7a92bab524cc9" />
+        -->
+
+        <activity
+            android:name=".RateCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name=".CouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".ReceiptActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name=".RidesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name=".TermsAndConditionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name=".InvoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RidesSelectedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddCardActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".fcmclasses.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcmclasses.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".others.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.carflash.user" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name=".others.SmsListener">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="54a77e298a52fd6775e6faf0b621fde0a76d5b04" />
+
+        <activity
+            android:name=".TrialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".samwork.RideLoadrActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        ///////////////////// login module
+        <activity
+            android:name=".accounts.EditEmailAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accounts.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accounts.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accounts.FaceBookSignupAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accounts.GoogleSignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accounts.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accounts.NormalSignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trackRideModule.TrackRideAactiviySamir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrialRideConfirmDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".TrialRidelaterDialogActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".TimeService" />
+        <service android:name=".StatusSession.TimelySessionService" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WalletActivity" />
+        <activity
+            android:name=".RentalRideLoaderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity android:name=".RentalTrackActivity" />
+        <activity
+            android:name=".RentalReceiptActivity"
+            android:label="@string/title_activity_rental_receipt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RentalRidesSelectedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewWalletMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMoneyToWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity android:name=".CustomerSupportActivity" />
+        <activity
+            android:name=".NoInternetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity android:name=".NotificationWebViewActivity" />
+        <activity
+            android:name=".PaymentFailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPass_Verify_OTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPass_ChangePass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Add_Card_First"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Verify_OTP"
+            android:screenOrientation="portrait" />
+
+        <!--
+            <activity android:name=".paystack.PayWithPaystackActivity"
+            android:screenOrientation="portrait"/>
+        -->
+
+        /////////// RENTAL
+        <activity
+            android:name=".rentalmodule.taxirentalmodule.RentalPackageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".rentalmodule.taxirentalmodule.RentalCarTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".rentalmodule.taxirentalmodule.ConfirmRentalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rentalmodule.taxirentalmodule.IntroForRentalPackage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".rentalmodule.taxirentalmodule.RidelaterConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".rentalmodule.taxirentalmodule.CouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity android:name=".PaymentActivity"></activity>
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TripHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CreditCardPaymentActivity"></activity>
+    </application>
+
+</manifest>

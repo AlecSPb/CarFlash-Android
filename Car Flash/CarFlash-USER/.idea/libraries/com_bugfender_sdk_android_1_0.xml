@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.bugfender.sdk:android-1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/36ee735319499cfc6e13f6d3e7c66eeb02ce4d53/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/36ee735319499cfc6e13f6d3e7c66eeb02ce4d53/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

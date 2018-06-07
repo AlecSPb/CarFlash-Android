@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".7"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layout_light"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.carflash.user.typeface.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/RECEIPT_ACTIVITY__payment_option"
+            android:textColor="@color/colorText"
+            android:textSize="16dp"
+            geekui:customTypeface="OpenSans_Regular.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorView" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_cash_on_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/RECEIPT_ACTIVITY__cash"
+                android:checked="true"
+                android:textColor="@color/colorText" />
+
+            <RadioButton
+                android:id="@+id/rb_paypal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/pay_via_card"
+                android:textColor="@color/colorText" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_done_payment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/layout_dark"
+            android:gravity="center">
+
+            <com.carflash.user.typeface.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RECEIPT_ACTIVITY__done"
+                android:textColor="@color/colorTextFooter"
+                android:textSize="16dp"
+                geekui:customTypeface="OpenSans_Regular.ttf" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

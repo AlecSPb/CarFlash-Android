@@ -1,0 +1,161 @@
+TASK rider id=2051
+  ACTIVITY rider/.TrialActivity 2ad32816 pid=28244
+    Local FragmentActivity 12af15e3 State:
+      mCreated=truemResumed=true mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    Active Fragments in 34813dd3:
+      #0: SupportMapFragment{200fcd10 #0 id=0x7f1001aa}
+        mFragmentId=#7f1001aa mContainerId=#ffffffff mTag=null
+        mState=5 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+        mAdded=true mRemoving=false mFromLayout=true mInLayout=true
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{34813dd3 in HostCallbacks{21956009}}
+        mHost=android.support.v4.app.FragmentActivity$HostCallbacks@21956009
+        mView=android.widget.FrameLayout{1fd2d20e V.E...C. ......ID 0,0-720,1230 #7f1001aa app:id/map_frag_main}
+        mInnerView=android.widget.FrameLayout{1fd2d20e V.E...C. ......ID 0,0-720,1230 #7f1001aa app:id/map_frag_main}
+        Child FragmentManager{d97e42f in SupportMapFragment{200fcd10}}:
+          FragmentManager misc state:
+            mHost=android.support.v4.app.FragmentActivity$HostCallbacks@21956009
+            mContainer=android.support.v4.app.Fragment$2@3c8caa3c
+            mParent=SupportMapFragment{200fcd10 #0 id=0x7f1001aa}
+            mCurState=5 mStateSaved=false mDestroyed=false
+    Added Fragments:
+      #0: SupportMapFragment{200fcd10 #0 id=0x7f1001aa}
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@21956009
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@21956009
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{a2af3c5 V.E..... ... 0,0-720,1280}
+        android.widget.LinearLayout{39ee011a V.E..... ... 0,0-720,1280}
+          android.view.ViewStub{22c8944b G.E..... ... 0,0-0,0 #1020379}
+          android.widget.FrameLayout{29982e28 V.E..... ... 0,0-720,1280 #1020002 android:id/content}
+            android.support.v4.widget.DrawerLayout{2ecc0741 VFED.... ... 0,0-720,1280 #7f100143 app:id/drawer_layout}
+              android.support.design.widget.CoordinatorLayout{345b14e6 V.ED.... ... 0,0-720,1280 #7f100144 app:id/cl_main}
+                android.widget.LinearLayout{1dc9abe0 V.E..... ... 0,50-720,1280}
+                  android.widget.FrameLayout{1b0a2a27 V.E..... ... 0,0-720,1230}
+                    android.widget.FrameLayout{1fd2d20e V.E...C. ... 0,0-720,1230 #7f1001aa app:id/map_frag_main}
+                      android.widget.FrameLayout{1d5604d4 V.E..... ... 0,0-720,1230}
+                        com.google.maps.api.android.lib6.gmm6.api.z{310d67d VFED..C. ... 0,0-720,1230}
+                        com.google.maps.api.android.lib6.impl.fr{11339972 V.E..... ... 0,0-720,1230}
+                          android.widget.ImageView{2be541c3 V.ED.... ... 10,1176-130,1220}
+                          android.widget.TextView{2a789a40 G.ED.... ... 0,0-0,0}
+                        android.widget.RelativeLayout{21d95d79 V.E..... ... 0,0-720,1230}
+                          android.widget.ImageView{289ddabe G.ED.... ... 0,0-0,0 #2}
+                          android.widget.RelativeLayout{10d0371f V.E..... ... 700,20-700,1210 #3}
+                            com.google.maps.api.android.lib6.impl.cd{928935f G.ED..C. ... 0,0-0,0}
+                          android.widget.LinearLayout{1a6d1a6c G.E..... ... 0,0-0,0 #1}
+                            android.widget.ImageView{1a095835 V.ED..C. ... 0,0-0,0}
+                            android.widget.ImageView{1cd8e4ca V.ED..C. ... 0,0-0,0}
+                          android.widget.LinearLayout{1c4b263b G.E..... ... 0,0-0,0 #4}
+                            android.widget.ImageView{3e477158 V.ED..C. ... 0,0-0,0}
+                            android.widget.ImageView{b0442b1 V.ED..C. ... 0,0-0,0}
+                          com.google.maps.api.android.lib6.impl.am{3088396 I.ED..C. ... 20,20-100,100 #5}
+                    android.widget.RelativeLayout{3ebbeb17 V.E...C. ... 620,20-700,100 #7f10028b app:id/btn}
+                      android.widget.ImageView{226e4b04 V.ED.... ... 15,15-65,65}
+                    android.widget.RelativeLayout{ce958ed V.E...C. ... 26,20-106,100 #7f100277 app:id/menu_btn}
+                      android.widget.ImageView{cc14322 V.ED.... ... 20,20-60,60 #7f100278 app:id/menu_image_btn}
+                    android.widget.LinearLayout{1f0a21b3 V.E..... ... 355,0-365,1230}
+                      android.widget.TextView{11071370 V.ED.... ... 0,280-10,615 #7f10028c app:id/dotted_line}
+                      android.widget.TextView{208f96e9 V.ED.... ... 0,615-10,1230}
+                    android.widget.LinearLayout{3e546f6e V.E..... ... 347,602-372,627}
+                      android.widget.ImageView{20fb260f V.ED.... ... 0,0-25,25 #7f10028d app:id/pin_color}
+                    android.widget.FrameLayout{f21f69c V.E..... ... 0,140-720,340}
+                      android.widget.LinearLayout{2341b8a5 V.E...C. ... 30,130-690,200 #7f10028e app:id/layout_changer}
+                        android.widget.RelativeLayout{3ddc147a V.E..... ... 10,10-20,60 #7f10028f app:id/source_destination_dot}
+                        android.widget.TextView{354e142b V.ED.... ... 20,11-208,59 #7f100290 app:id/layout_changer_txt}
+                      rider.samir.customviews.samflip.FlipLayout{a5e088 V.E..... ... 0,0-720,150 #7f100291 app:id/flip_layout}
+                        android.widget.LinearLayout{23a3a21 V.E...C. ... 0,0-720,150}
+                          android.support.v7.widget.CardView{706fe46 V.E..... ... 20,20-700,130}
+                            android.widget.LinearLayout{f97c807 V.E..... ... 0,0-680,110}
+                              android.widget.LinearLayout{1efc7d34 V.E..... ... 20,10-660,100 #7f10023b app:id/ll_pickup_location}
+                                android.widget.RelativeLayout{29df575d V.E..... ... 0,0-10,90}
+                                android.widget.LinearLayout{fa4b8d2 V.E..... ... 10,0-640,90}
+                                  rider.samir.customviews.TypeFaceTextMonixRegular{1ddedda3 V.ED.... ... 20,11-172,36}
+                                  rider.typeface.TextTypeRegular{2e7e38a0 V.ED.... ... 16,40-590,78 #7f1002fc app:id/pickup_address}
+                        android.widget.LinearLayout{2cbf0c59 G.E...C. ... 0,0-0,0}
+                          android.support.v7.widget.CardView{28f1901e V.E..... ... 0,0-0,0}
+                            android.widget.LinearLayout{1df7b0ff V.E..... ... 0,0-0,0}
+                              android.widget.LinearLayout{1e9e3ecc V.E..... ... 0,0-0,0 #7f10023b app:id/ll_pickup_location}
+                                android.widget.RelativeLayout{1e4b1515 V.E..... ... 0,0-0,0}
+                                android.widget.LinearLayout{29a2902a V.E..... ... 0,0-0,0}
+                                  rider.samir.customviews.TypeFaceTextMonixRegular{2ca05e1b V.ED.... ... 0,0-0,0}
+                                  rider.typeface.TextTypeRegular{d67bb8 V.ED.... ... 0,0-0,0 #7f10023c app:id/drop_address}
+                      android.widget.RelativeLayout{1d54ed91 V.E...C. ... 20,50-700,150 #7f100292 app:id/flip_click_layout}
+                    android.widget.LinearLayout{2cb184f6 V.E..... ... 0,968-720,1230 #7f10027a app:id/ll_for_ride}
+                      android.view.View{2a5cc0f7 V.ED.... ... 0,0-720,1}
+                      android.view.View{2539b64 V.ED.... ... 0,1-720,2}
+                      android.widget.FrameLayout{a49d1cd V.E..... ... 0,2-720,162}
+                        com.sam.placer.PlaceHolderView{30e8fa82 VFEDH... F.. 0,0-720,160 #7f100174 app:id/place_holder}
+                      android.widget.LinearLayout{12127593 V.E..... ... 0,162-720,262 #7f10027b app:id/ridebox}
+                        android.widget.LinearLayout{146109d0 V.E...C. ... 0,0-360,100 #7f10027c app:id/ll_ride_later}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{252ebdc9 V.ED.... ... 0,35-360,65}
+                        android.view.View{25303cce V.ED.... ... 360,0-361,100}
+                        android.widget.LinearLayout{1d64d7ef V.E...C. ... 361,0-720,100 #7f10027d app:id/ll_ride_now}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{2f94f2fc V.ED.... ... 117,35-242,65}
+              android.widget.LinearLayout{f5c6d85 I.E..... ... -600,0-0,1280 #7f100145 app:id/nav_view}
+                android.support.v7.widget.CardView{2d9757da V.E..... ... 20,70-580,1260}
+                  android.widget.LinearLayout{12d1040b V.E..... ... 0,0-560,1003}
+                    android.widget.LinearLayout{1dbc42e8 V.E...C. ... 0,0-560,120 #7f1002ce app:id/profile_menu_btn}
+                      android.widget.FrameLayout{2cfb5d01 V.E..... ... 0,10-100,110}
+                        android.widget.ImageView{2d2317a6 V.ED.... ... 0,0-100,100 #7f1002cf app:id/iv_profile_pic}
+                      android.widget.LinearLayout{1989d5e7 V.E..... ... 100,10-516,110}
+                        android.widget.TextView{3686a594 V.ED.... ... 30,13-386,51 #7f1002d0 app:id/tv_phone_number}
+                        android.widget.TextView{223fc83d V.ED.... ... 30,51-386,87 #7f1002d1 app:id/tv_profile_email}
+                      android.widget.ImageView{20590832 V.ED.... ... 516,10-540,34}
+                    android.view.View{2f13e983 V.ED.... ... 0,120-560,122}
+                    android.widget.ScrollView{3af28700 VFED.V.. ... 0,122-560,1003}
+                      android.widget.LinearLayout{2865ab39 V.E..... ... 0,0-560,881}
+                        android.widget.LinearLayout{148b757e V.E...C. ... 0,0-560,100 #7f1002d2 app:id/book_a_ride}
+                          android.widget.ImageView{1aa19adf V.ED.... ... 50,30-90,70}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{3b79132c V.ED.... ... 110,0-560,100}
+                        android.widget.LinearLayout{366cc1f5 V.E...C. ... 0,100-560,200 #7f1002d3 app:id/trips_menu_btn}
+                          android.widget.ImageView{7e56b8a V.ED.... ... 50,30-90,70 #7f1002d4 app:id/imageView2}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{3a2f05fb V.ED.... ... 110,0-560,100}
+                        android.widget.LinearLayout{34fa3618 V.E...C. ... 0,200-560,300 #7f1002d5 app:id/payment_menu_btn}
+                          android.widget.ImageView{39948871 V.ED.... ... 50,30-90,70}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{3e36b656 V.ED.... ... 110,0-560,100 #7f1002d6 app:id/typeFaceTextMonixRegular2}
+                        android.widget.LinearLayout{55e06d7 G.E..... ... 0,0-0,0}
+                          android.widget.ImageView{10689bc4 V.ED.... ... 0,0-0,0}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{19983aad V.ED.... ... 0,0-0,0}
+                        android.widget.LinearLayout{167fe1e2 V.E...C. ... 0,300-560,400 #7f1002d7 app:id/rate_card_menu_btn}
+                          android.widget.ImageView{22123973 V.ED.... ... 50,30-90,70}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{3135b030 V.ED.... ... 110,0-560,100 #7f1002d8 app:id/typeFaceTextMonixBold}
+                        android.view.View{4aad4a9 V.ED.... ... 40,440-520,441}
+                        android.widget.LinearLayout{2d3e3a2e V.E...C. ... 0,481-560,581 #7f1002d9 app:id/report_issue_menu_btn}
+                          android.widget.ImageView{26ccf9cf V.ED.... ... 50,30-90,70}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{3e7d9f5c V.ED.... ... 110,0-560,100}
+                        android.widget.LinearLayout{3f331265 V.E...C. ... 0,581-560,681 #7f1002da app:id/call_support_menu_btn}
+                          android.widget.ImageView{1777cb3a V.ED.... ... 50,30-90,70}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{26c963eb V.ED.... ... 110,0-560,100 #7f1002db app:id/typeFaceTextMonixRegular}
+                        android.widget.LinearLayout{12f35548 V.E...C. ... 0,681-560,781 #7f1002dc app:id/terms_and_condition_menu_btn}
+                          android.widget.ImageView{33476fe1 V.ED.... ... 50,30-90,70}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{2876106 V.ED.... ... 110,0-560,100}
+                        android.widget.LinearLayout{23d853c7 V.E...C. ... 0,781-560,881 #7f1002dd app:id/about_menu_btn}
+                          android.widget.ImageView{3f8c7df4 V.ED.... ... 50,30-90,70}
+                          rider.samir.customviews.TypeFaceTextMonixRegular{3bea291d V.ED.... ... 110,0-560,100}
+        android.view.View{4a88792 V.ED.... ... 0,0-720,50 #102002f android:id/statusBarBackground}
+
+  ACTIVITY rider/.SplashActivity 24ad270b pid=28244
+    Local FragmentActivity c5b6e15 State:
+      mCreated=truemResumed=false mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@3e6f1ddb
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@3e6f1ddb
+      mCurState=4 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{22caa078 V.E..... ... 0,0-720,1280}
+        android.widget.LinearLayout{21fb1351 V.E..... ... 0,0-720,1280}
+          android.view.ViewStub{28b7bcb7 G.E..... ... 0,0-0,0 #1020379}
+          android.widget.FrameLayout{3e454c24 V.E..... ... 0,50-720,1280}
+            android.support.v7.widget.FitWindowsLinearLayout{288c938d V.E..... ... 0,0-720,1230 #7f1000e3 app:id/action_bar_root}
+              android.support.v7.widget.ViewStubCompat{3f816d53 G.E..... ... 0,0-0,0 #7f1000e4 app:id/action_mode_bar_stub}
+              android.support.v7.widget.ContentFrameLayout{1a9d0690 V.E..... ... 0,0-720,1230 #1020002 android:id/content}
+                android.widget.FrameLayout{103bdb89 V.E..... ... 0,0-720,1230 #7f100106 app:id/root}
+                  android.support.v7.widget.AppCompatImageView{3b56678e V.ED.... ... 0,0-720,1230}
+                  android.support.v7.widget.AppCompatImageView{3d2b8baf V.ED.... ... 160,415-560,815}
+                  android.widget.ProgressBar{873fbbc V.ED.... ... 312,767-408,863}
+                  android.support.v7.widget.AppCompatTextView{1f7da745 V.ED.... ... 238,896-481,934 #7f10018e app:id/loading_txt}
+        android.view.View{15d56e9a V.ED.... ... 0,0-720,50 #102002f android:id/statusBarBackground}

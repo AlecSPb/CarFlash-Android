@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/shapes2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/icons_8_muted_greydark"
+        android:text="No user found regarding this credential, you can try it agian or proceed to register a new phone"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/orange_corner"
+        android:id="@+id/create_new_account"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_contact_us"
+            android:tint="@color/pure_white"
+            android:layout_marginRight="20dp"/>
+
+        <com.carflash.user.accounts.TypefaceDosisRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create new Account"
+            android:textColor="@color/pure_white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/orange_corner"
+        android:id="@+id/register_new_phone"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_mail"
+            android:tint="@color/pure_white"/>
+        <com.carflash.user.accounts.TypefaceDosisRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register new Phone"
+            android:textColor="@color/pure_white"/>
+    </LinearLayout>
+
+
+    <com.carflash.user.accounts.TypefaceDosisRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/pure_black"
+        android:text="You will get a OTP at run time during the process , It is recomended not to share that OTP with anyone during registration process"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/icons_8_muted_red"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/cancel_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Again"
+            android:textColor="@color/pure_white"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

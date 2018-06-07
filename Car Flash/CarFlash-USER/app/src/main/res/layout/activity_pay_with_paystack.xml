@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.carflash.user.paystack.PayWithPaystackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pure_white"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_paystack"
+            android:gravity="center">
+
+            <com.carflash.user.samir.customviews.TypeFaceTextMonixBold
+                android:id="@+id/typefaceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paystack"
+                android:gravity="center"
+                android:textColor="@color/color_action_bar_background"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/icons_8_muted_grey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp">
+
+    <com.carflash.user.samir.customviews.TypeFaceTextcaviarDream
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="3dp"
+        android:text="@string/thankyou"
+        android:textSize="22dp"
+        android:textColor="@color/muted_black" />
+
+        <com.carflash.user.samir.customviews.TypeFaceTextcaviarDream
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:text="@string/thankyou_note"
+            android:textSize="15dp"
+            android:textColor="@color/muted_black" />
+
+    </LinearLayout>
+
+    <com.carflash.user.samir.customviews.TypeFaceTextcaviarDream
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/thankyou_note_two"
+        android:textSize="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/muted_black" />
+
+
+    <com.carflash.user.samir.customviews.TypeFaceTextcaviarDream
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/thankyou_note_three"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="3dp"
+        android:textColor="@color/muted_black" />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shapes_white_transparent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+<!--
+        &lt;!&ndash; Email &ndash;&gt;
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColorHint="#011B33"/>-->
+
+        <!-- Credit Card Number-->
+        <EditText
+            android:id="@+id/edit_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/card_details"
+            android:layout_marginTop="@dimen/margin_view"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/icons_8_muted_greydark"
+            android:imeActionId="@+id/edit_expiry_month"/>
+
+        <!-- Horizontal divider -->
+        <View
+            android:id="@+id/horizontal_divider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Container for expiry -->
+        <RelativeLayout
+            android:id="@+id/layout_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_card_number"
+            android:layout_marginTop="@dimen/margin_view"
+            android:layout_toLeftOf="@id/horizontal_divider"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp">
+
+            <!-- Expiry prompt -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_expiry_prompt"
+                android:text="Expiry"
+                android:textColor="#011B33"
+                android:paddingLeft="5dp" />
+
+            <!-- EditText for month -->
+            <EditText
+                android:id="@+id/edit_expiry_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="MM"
+                android:maxEms="4"
+                android:paddingRight="@dimen/margin_view"
+                android:paddingBottom="@dimen/margin_view"
+                android:paddingTop="@dimen/margin_view"
+                android:layout_marginLeft="5dp"
+                android:textColorHint="@color/icons_8_muted_greydark"
+                android:inputType="number"
+                android:layout_below="@id/textview_expiry_prompt"
+                android:singleLine="true"
+                android:maxLength="2"
+                android:imeOptions="actionNext"
+                android:imeActionId="@+id/edit_expiry_year"/>
+
+            <!-- EditText for year -->
+            <EditText
+                android:id="@+id/edit_expiry_year"
+                android:layout_width="wrap_content"
+                android:textColorHint="@color/icons_8_muted_greydark"
+                android:layout_height="wrap_content"
+                android:hint="YY"
+                android:maxEms="4"
+                android:maxLength="2"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="@dimen/margin_view"
+                android:paddingBottom="@dimen/margin_view"
+                android:paddingRight="@dimen/margin_view"
+                android:layout_below="@id/textview_expiry_prompt"
+                android:layout_toRightOf="@id/edit_expiry_month"
+                android:singleLine="true"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:imeActionId="@+id/edit_cvv"/>
+        </RelativeLayout>
+
+
+        <!-- layout for cvv -->
+        <RelativeLayout
+            android:id="@+id/layout_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_card_number"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/horizontal_divider"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp">
+
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_cvv"
+                android:text="CVV"
+                android:paddingLeft="@dimen/margin_view"
+                android:textColor="#011B33"/>
+
+            <!-- EditText for cvv -->
+            <EditText
+                android:id="@+id/edit_cvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:singleLine="true"
+                android:maxLength="4"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="@dimen/margin_view"
+                android:textColorHint="@color/icons_8_muted_greydark"
+                android:paddingBottom="@dimen/margin_view"
+                android:paddingRight="@dimen/margin_view"
+                android:inputType="number"
+                android:layout_below="@id/textview_cvv"
+                android:imeOptions="actionDone"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payLayout"
+            android:background="@color/color_menu_text">
+
+
+
+            <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                android:id="@+id/payText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/make_payment"
+                android:textColor="@color/pure_white"
+                android:textSize="17dp"
+                android:layout_centerInParent="true"
+                android:padding="15dp"/>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/pay_progress"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+</LinearLayout>

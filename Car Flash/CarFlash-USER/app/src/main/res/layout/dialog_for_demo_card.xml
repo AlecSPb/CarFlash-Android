@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".7"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layout_light_for_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.carflash.user.typeface.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/ADD_CARD_ACTIVITY__the_app_is_in_demo_version"
+            android:textColor="@color/colorText"
+            android:textSize="15dp"
+            geekui:customTypeface="OpenSans_Regular.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorView" />
+
+        <com.carflash.user.typeface.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/ADD_CARD_ACTIVITY__this_app_is_in_demo_version_in_order_to_save_acctual_card_you_need_to_register_an_account_over_stripe_payment_gateway_n_for_demo_purpose_you_can_use_4242_4242_4242_4242_as_a_card_number_for_testing"
+            android:textColor="@color/colorText"
+            android:textSize="13dp"
+            geekui:customTypeface="OpenSans_Regular.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorView" />
+
+        <LinearLayout
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ADD_CARD_ACTIVITY__ok"
+                android:textColor="@color/pure_white"
+                android:textSize="15dp"
+                geekui:customTypeface="OpenSans_Regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

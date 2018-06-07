@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\e775738ea2535900793f62db42a9c53114a7ecc1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_76b99d449d802b4c504085d4348186239e478106\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b09adb48464c76b6465d9d3aca9565d511d1f745">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f415a2ecc3208383a47296701139156cf20dd0b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\cf4b316aae826e7a48d9eca958da5574b17f2778\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b1c250352bb7bbd5ea1982ca5165f2a81f36b530">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_25e2f349685d176c0ac3fa4cc2c3623c9cec1153\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\84489a99716bc13b828ce63ac68bc96ffb2438ba\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2482bfd874e8b3927f4141105674ad392ff83698">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_470238b2f06fb1e9a7c2d796f3ad5041f57c7707\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\36ee735319499cfc6e13f6d3e7c66eeb02ce4d53\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1987062e57099282f85e737e5020d4bb28e3ddc1">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_65abe81ed8c1bcc6741724940b79ac9de98e165f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\cb28873fe968dbe89ebd156fec4363025b7c3e27\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="49d6e981cef2eb91ff98aa6004fadb3bd757790d">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_32137c27efb8640c8a564aecb1cfaed60cb70c32\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\7d1f628c5d6e232c44ac1432f55da77e458a8ab0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="821200fa3e07f93d0ae66e4a5917db8bac69dfe1">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_89acf06f714b16bd614d9c79df43e3024c26be28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\766b65894755f35681082ae27f46651dcbc574b2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e3b8ecc558c6deeb90eb3934c1c715128ab26dcd">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_833d40ec90f23a883b3adf71e316df605f45fa4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\8f582aa5494d93639a0430701a784a95cc493ce8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="95d97996ec624fca99f6b06ad6004c749259970d">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_13d67573d74a4f99e6b58736a281d527001ebb1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\26665295a19dced033445289ad951f2150a0e5c1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="82ea5a937ab84229fbd2f3fc8cf2a72cbdf0ee0f">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_280c59c6c1c13e126c0f890c913b5a456956c211\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c323c36ecc68965c4cfb460f7721113d2b61ed03">
+        <dex dex="E:\project\Taxi3Jan\Car Flash\CarFlash-USER\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_4e066e1470e889644ec91576c6e69b95f4e7f6dc\classes.dex" />
+    </item>
+
+</items>

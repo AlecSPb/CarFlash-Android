@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="morxander.zaman:Zaman-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/b0e51b72ee310604ed114803b8fdae60e23c0904/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b0e51b72ee310604ed114803b8fdae60e23c0904/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/morxander.zaman/Zaman/1.0.0/435e9f3ee7b24e42691634f0e2e2a1fedce77f5c/Zaman-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

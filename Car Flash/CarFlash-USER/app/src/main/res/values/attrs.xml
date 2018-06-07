@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+
+
+    <attr name="timeAmPmBackgroundColor" format="reference|color" />
+    <attr name="timeAmPmSelectBackgroundColor" format="reference|color" />
+    <attr name="timeAmPmTextColor" format="reference|color" />
+
+    <!-- Attrs Switch Time -->
+    <declare-styleable name="SwitchTimeCircleColor">
+        <attr name="timeCircleColor" format="reference|color" />
+        <attr name="timeCenterColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchTimeSelectorColor">
+        <attr name="timeSelectorColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchTimeCircularNumbersColor">
+        <attr name="timeCircularNumbersColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchTimeAMPMColor">
+        <attr name="amPmBackgroundColor" format="reference|color" />
+        <attr name="amPmSelectBackgroundColor" format="reference|color" />
+        <attr name="amPmTextColor" format="reference|color" />
+    </declare-styleable>
+
+    <!-- Attrs Years -->
+    <declare-styleable name="ListPickerYearView">
+        <attr name="minYear" format="reference|integer" />
+        <attr name="maxYear" format="reference|integer" />
+        <attr name="defaultYear" format="reference|integer" />
+    </declare-styleable>
+
+    <!-- Attrs Year Text Indicator -->
+    <declare-styleable name="YearTextIndicator">
+        <attr name="yearSelectBackgroundColor" format="reference|color" />
+        <attr name="yearSelectTextColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextCircularIndicatorView">
+        <!-- Change color of circle background TODO javadoc-->
+        <attr name="colorCircleIndicator" format="reference|color" />
+    </declare-styleable>
+
+
+</resources>

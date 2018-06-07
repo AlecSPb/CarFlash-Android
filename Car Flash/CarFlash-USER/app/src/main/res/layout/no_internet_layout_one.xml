@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/relative_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"><ImageView
+        android:id="@+id/remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:tint="@color/pure_white"
+        android:src="@drawable/ic_no_ieternet_clowd"/>
+
+
+        <TextView
+            android:id="@android:id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/remove_btn"
+            android:gravity="center|left"
+            android:padding="8dp"
+            android:text="No Internet Connection"
+            android:textColor="@color/pure_white"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            android:textStyle="bold"/></LinearLayout>
+
+
+
+
+
+</RelativeLayout>

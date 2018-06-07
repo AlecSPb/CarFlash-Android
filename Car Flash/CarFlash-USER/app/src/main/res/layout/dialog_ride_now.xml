@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.carflash.user.samir.customviews.pulse.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pulse_count="3"
+        android:layout_marginRight="6dp"
+        app:pulse_duration="7000"
+        app:pulse_repeat="0"
+        app:pulse_color="#f89e22"
+        app:pulse_startFromScratch="false"
+        app:pulse_interpolator="Linear"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </com.carflash.user.samir.customviews.pulse.PulsatorLayout>
+
+
+
+</LinearLayout>

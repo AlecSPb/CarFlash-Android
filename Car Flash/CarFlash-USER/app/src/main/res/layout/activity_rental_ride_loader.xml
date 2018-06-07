@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ride_loadr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/pure_white"
+    tools:context="com.carflash.user.samwork.RideLoadrActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/close"
+                android:background="@color/pure_white">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cross"
+                        android:id="@+id/cancel"
+                        android:tint="@color/colorPrimary"/>
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progress_bar"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/root_layout"
+                android:background="@color/pure_white">
+
+
+
+                <com.carflash.user.samir.customviews.TypeFaceTextMonixBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RENTAL_RIDE_LOADER_ACTIVITY__getting_nearest_rental_driver"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+
+                <com.carflash.user.samir.customviews.pulse.PulsatorLayout
+                    android:id="@+id/pulsator"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:pulse_count="3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="6dp"
+                    app:pulse_duration="7000"
+                    app:pulse_repeat="20"
+                    app:pulse_color="@color/colorPrimary"
+                    app:pulse_startFromScratch="false"
+                    app:pulse_interpolator="Linear"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"/>
+
+
+
+                <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RENTAL_RIDE_LOADER_ACTIVITY__loading"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+                <com.carflash.user.samir.customviews.TypeFaceTextcaviarDream
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/RENTAL_RIDE_LOADER_ACTIVITY__please_wiat_your_driver_reach_you_soon_soon_in_a_while"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+</LinearLayout>

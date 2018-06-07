@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.carflash.driver">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.carflash.driver.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <permission
+        android:name="com.carflash.driver.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.carflash.driver.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.carflash.driver.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo_100"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="com.hypertrack.lib"
+        android:resizeableActivity="true"
+        tools:replace="android:icon, android:name">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.carflash.driver.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.carflash.driver.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name="com.carflash.driver.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.PriceFareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name="com.carflash.driver.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.AboutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name="com.carflash.driver.ForgotPass_VerifyOTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.ForgotPass_ConfirmPass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.TermsAndCondition"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name="com.carflash.driver.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.DocumentActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.carflash.driver.others.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.carflash.driver" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.carflash.driver.fcmclasses.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.carflash.driver.fcmclasses.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <activity android:name="com.carflash.driver.RidesActivity" />
+        <activity android:name="com.carflash.driver.SelectedRidesActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="54a77e298a52fd6775e6faf0b621fde0a76d5b04" />
+
+        <activity
+            android:name="com.carflash.driver.CustomerSupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.trackride.TrackRideActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.carflash.driver.TimeService" />
+        <service android:name="com.carflash.driver.TimelySessionService" />
+
+        <activity
+            android:name="com.carflash.driver.earnings.EarningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.earnings.WeeklyStatementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.earnings.DailyStatementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.TrialReceivePassengerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.OnlineOfflineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name="com.carflash.driver.ReceiveRentalPassengerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.RentalTrackRideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.MeterImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name="com.carflash.driver.RentalPriceFareActiviy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.SelectedRentalRideActivity"
+            android:label="@string/title_activity_selected_rental_ride"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.carflash.driver.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.NotificationWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.Verify_OTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.SosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name="com.carflash.driver.PhotoUploaderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name="com.carflash.driver.StatusActiity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carflash.driver.TripHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.carflash.driver.AcceptPassActivity" />
+        <activity
+            android:name="com.carflash.driver.ReceivePassengerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.carflash.driver.ReAcceptpassActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.example.spinno.onetap"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile project(':library')
+    compile project(':circularimageview')
+    compile project(':menudrawer')
+    compile project(':parallaxviewpager')
+    compile project(':library2')
+    compile 'com.google.android.gms:play-services:7.8.0'
+    compile 'com.google.android.gms:play-services:7.0.0'
+    compile files('libs/universal-image-loader-1.8.0-with-sources.jar')
+    compile project(':ParallaxScroll')
+    compile project(':librarylist')
+    compile files('libs/mpandroidchartlibrary-2-1-3.jar')
+    compile project(':library22')
+    compile project(':rangebar')
+}

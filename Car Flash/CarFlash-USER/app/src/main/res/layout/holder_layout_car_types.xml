@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_screen_bottom_layout"
+    android:background="@color/pure_white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.carflash.user.samir.customviews.TypeFaceRobotoRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/HOLDER_PAGER_CARTYPE__nearest_ride"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_clock" />
+
+
+                <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                    android:id="@+id/nearest_car_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="--"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/blue_black_circle">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:paddingBottom="11dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/car" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/blue_black_border_stroke"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:padding="1.3dp"
+                            android:src="@drawable/ic_passengers_seats"
+                            android:tint="@color/pure_white" />
+                    </LinearLayout>
+
+
+                    <com.carflash.user.samir.customviews.TypeFaceRobotoRegular
+                        android:id="@+id/car_name_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="---"
+                        android:textColor="@color/pure_black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.carflash.user.samir.customviews.TypeFaceRobotoRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/HOLDER_PAGER_CARTYPE__base_fare"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_petrol_pump" />
+
+                <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                    android:id="@+id/base_fare_first_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="--"
+                    android:textColor="@color/icons_8_muted_grey"
+                    android:textSize="10dp" />
+
+
+
+                <com.carflash.user.samir.customviews.TypeFaceTextMonixRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/per_km"
+                    android:textColor="@color/icons_8_muted_grey"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.carflash.user.samir.customviews.slider.DiscreteSlider
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@color/pure_white"
+        app:backdropFillColor="#d7d7d7"
+        app:backdropStrokeColor="#bbbbbb"
+        app:backdropStrokeWidth="1dp"
+        app:horizontalBarThickness="4dp"
+        app:tickMarkRadius="8dp"
+        app:thumb="@drawable/ic_discrete_selector"
+        app:progressDrawable="@drawable/transparent_progress_drawable"
+        android:id="@+id/discrete_slider"/>
+
+    <RelativeLayout
+        android:id="@+id/tick_mark_labels_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+
+</LinearLayout>

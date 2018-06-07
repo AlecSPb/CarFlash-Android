@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".rentalmodule.taxirentalmodule.ConfirmRentalActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:gravity="center|left">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_left_sort"
+                android:padding="14dp"
+                android:id="@+id/back"/>
+
+            <com.carflash.user.rentalmodule.customview.TypefaceMonixRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/CONFIRM_RENTAL_ACTIVITY__confirm_booking"
+                android:paddingLeft="-30dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/car_background" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ca000000"></RelativeLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/car_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/car" />
+
+                    <com.carflash.user.samir.customviews.TypeFaceTextMonixBold
+                        android:id="@+id/car_type_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Sedan Prime"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/car_models_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Tata Indica , maruti Ritz , Toyota Fortuner , Datson Go"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="@string/CONFIRM_RENTAL_ACTIVITY__selected_package" />
+
+                    <LinearLayout
+                        android:id="@+id/package_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/selected_package_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 hour 20Km"
+                            android:textColor="#34495e" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_down_sort"
+                            android:tint="#34495e" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:text="@string/CONFIRM_RENTAL_ACTIVITY__rate_card" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginRight="-2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/pure_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/CONFIRM_RENTAL_ACTIVITY__base_fare"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:id="@+id/base_fare_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="includes 2 hours 20 km" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/base_fare_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$446"
+                            android:textColor="#333333"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/CONFIRM_RENTAL_ACTIVITY__additional_distance_fare"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:id="@+id/additional_distance_fare_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/CONFIRM_RENTAL_ACTIVITY__after_first_20_km" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/additional_distance_fare_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$10"
+                            android:textColor="#333333"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/CONFIRM_RENTAL_ACTIVITY__additional_time_fare"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:id="@+id/additional_time_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/CONFIRM_RENTAL_ACTIVITY__after_first_2_hours" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/additional_time_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$125"
+                            android:textColor="#333333"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="#333333" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:id="@+id/payment_layout"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_money" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:id="@+id/payment_txt"
+                                android:text="@string/CONFIRM_RENTAL_ACTIVITY__select_payment_type"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_down_sort"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#333333" />
+
+                        <LinearLayout
+                            android:id="@+id/apply_coupon"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_coupon"
+                                android:tint="#bbbbbb" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:id="@+id/coupon_tx"
+                                android:text="@string/CONFIRM_RENTAL_ACTIVITY__apply_coupon"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/terms_txt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#dcdcdc"
+                android:padding="15dp"
+                android:text="NOTE:\n\n\u2022  For usage beyond selected package, additional fare will be applicable as per rates above. \n\n\u2022  Additional service tax applicable on fare.\n\n\u2022  Toll will be added in the final bill if applicable, please pay parking fee when required.\n\n\u2022  Rental can be used for local travels only. Package cannot be changed after booking is confirmed." />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.carflash.user.rentalmodule.customview.TypefaceMonixRegular
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/CONFIRM_RENTAL_ACTIVITY__book_for_later"
+            android:gravity="center"
+            android:background="#333333"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/pure_white"
+            android:id="@+id/book_later_btn"/>
+        <com.carflash.user.rentalmodule.customview.TypefaceMonixBold
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/CONFIRM_RENTAL_ACTIVITY__ride_now"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:background="#717171"
+            android:layout_weight="1"
+            android:id="@+id/ride_now"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

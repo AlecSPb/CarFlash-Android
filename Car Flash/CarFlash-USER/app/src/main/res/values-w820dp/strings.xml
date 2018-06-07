@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ride_cancel_by_admin">Ride Cancel By Admin</string>
+    <string name="language">Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="fetching_configurations">Fetching Configuration</string>
+</resources>

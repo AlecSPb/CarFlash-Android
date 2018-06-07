@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.pwittchen:networkevents-2.1.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/c39766810e4c1a2a6695322e54d6bd69a7cb0f04/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c39766810e4c1a2a6695322e54d6bd69a7cb0f04/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pwittchen/networkevents/2.1.6/97968caf159a648c8339f4906f2799998679b5aa/networkevents-2.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

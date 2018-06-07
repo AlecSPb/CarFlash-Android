@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.carflash.user.typeface.TypefaceTextView
+            android:id="@+id/tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text=""
+            android:textColor="@color/colorText"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            geekui:customTypeface="OpenSans_Regular.ttf" />
+
+        <com.carflash.user.typeface.TypefaceTextView
+            android:id="@+id/tv_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorText"
+            android:text=""
+            android:textSize="13dp"
+            geekui:customTypeface="OpenSans_Regular.ttf" />
+
+    </LinearLayout>
+</LinearLayout>
